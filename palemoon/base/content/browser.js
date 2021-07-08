@@ -1638,7 +1638,7 @@ function HandleAppCommandEvent(evt) {
       gFindBar.onFindCommand();
       break;
     case "Help":
-      openHelpLink('firefox-help');
+      openHelpLink('pale-moon-help');
       break;
     case "Open":
       BrowserOpenFileWindow();
