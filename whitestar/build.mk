@@ -3,46 +3,46 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 installer:
-	@$(MAKE) -C palemoon/installer installer
+	@$(MAKE) -C whitestar/installer installer
 
 package:
-	@$(MAKE) -C palemoon/installer make-archive
+	@$(MAKE) -C whitestar/installer make-archive
 
 l10n-package:
-	@$(MAKE) -C palemoon/installer make-langpack
+	@$(MAKE) -C whitestar/installer make-langpack
 
 mozpackage:
-	@$(MAKE) -C palemoon/installer
+	@$(MAKE) -C whitestar/installer
 
 package-compare:
-	@$(MAKE) -C palemoon/installer package-compare
+	@$(MAKE) -C whitestar/installer package-compare
 
 stage-package:
-	@$(MAKE) -C palemoon/installer stage-package make-buildinfo-file
+	@$(MAKE) -C whitestar/installer stage-package make-buildinfo-file
 
 install::
-	@$(MAKE) -C palemoon/installer install
+	@$(MAKE) -C whitestar/installer install
 
 clean::
-	@$(MAKE) -C palemoon/installer clean
+	@$(MAKE) -C whitestar/installer clean
 
 distclean::
-	@$(MAKE) -C palemoon/installer distclean
+	@$(MAKE) -C whitestar/installer distclean
 
 source-package::
-	@$(MAKE) -C palemoon/installer source-package
+	@$(MAKE) -C whitestar/installer source-package
 
 upload::
-	@$(MAKE) -C palemoon/installer upload
+	@$(MAKE) -C whitestar/installer upload
 
 source-upload::
-	@$(MAKE) -C palemoon/installer source-upload
+	@$(MAKE) -C whitestar/installer source-upload
 
 hg-bundle::
-	@$(MAKE) -C palemoon/installer hg-bundle
+	@$(MAKE) -C whitestar/installer hg-bundle
 
 l10n-check::
-	@$(MAKE) -C palemoon/locales l10n-check
+	@$(MAKE) -C whitestar/locales l10n-check
 
 ifdef ENABLE_TESTS
 # Implemented in testing/testsuite-targets.mk
