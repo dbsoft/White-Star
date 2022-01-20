@@ -26,12 +26,12 @@ include $(topsrcdir)/config/config.mk
 
 ifdef LOCALE_MERGEDIR
 PPL_LOCALE_ARGS = \
-  --l10n-dir=$(LOCALE_MERGEDIR)/palemoon/installer \
-  --l10n-dir=$(call EXPAND_LOCALE_SRCDIR,palemoon/locales)/installer \
-  --l10n-dir=$(topsrcdir)/palemoon/locales/en-US/installer \
+  --l10n-dir=$(LOCALE_MERGEDIR)/whitestar/installer \
+  --l10n-dir=$(call EXPAND_LOCALE_SRCDIR,whitestar/locales)/installer \
+  --l10n-dir=$(topsrcdir)/whitestar/locales/en-US/installer \
   $(NULL)
 else
-PPL_LOCALE_ARGS=$(call EXPAND_LOCALE_SRCDIR,palemoon/locales)/installer
+PPL_LOCALE_ARGS=$(call EXPAND_LOCALE_SRCDIR,whitestar/locales)/installer
 endif
 
 OVERRIDE_DEFAULT_GOAL := installer
