@@ -1557,7 +1557,7 @@ var gBrowserInit = {
       let itemArray = itemBranch.getChildList("");
 
       // See if any privacy.item prefs are set
-      let doMigrate = itemArray.some(function(name) itemBranch.prefHasUserValue(name));
+      let doMigrate = itemArray.some(name => itemBranch.prefHasUserValue(name));
       // Or if sanitizeOnShutdown is set
       if (!doMigrate) {
         doMigrate = gPrefService.getBoolPref("privacy.sanitize.sanitizeOnShutdown");
@@ -2763,8 +2763,8 @@ var PrintPreviewListener = {
       this._chromeState.syncNotificationsOpen = !syncNotifications.notificationsHidden;
       syncNotifications.notificationsHidden = true;
     }
-  },
 #endif
+  },
 
   _showChrome: function() {
     if (this._chromeState.notificationsOpen) {
@@ -3079,7 +3079,7 @@ const BrowserSearch = {
 
     // Check to see whether we've already added an engine with this title
     if (browser.engines) {
-      if (browser.engines.some(function(e) e.title == engine.title)) {
+      if (browser.engines.some(e => e.title == engine.title)) {
         return;
       }
     }
@@ -4559,7 +4559,7 @@ nsBrowserAccess.prototype = {
   },
 
   isTabContentWindow: function(aWindow) {
-    return gBrowser.browsers.some(function(browser) browser.contentWindow == aWindow);
+    return gBrowser.browsers.some(browser => browser.contentWindow == aWindow);
   }
 }
 
@@ -4803,8 +4803,8 @@ var TabsInTitlebar = {
   },
 
   _update: function() {
-    function $(id) document.getElementById(id);
-    function rect(ele) ele.getBoundingClientRect();
+    let $ = id => document.getElementById(id);
+    let rect = ele => ele.getBoundingClientRect();
 
     if (!this._initialized || window.fullScreen) {
       return;
