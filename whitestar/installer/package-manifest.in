@@ -123,6 +123,7 @@
 @BINPATH@/@MOZ_APP_NAME@
 #endif
 @RESPATH@/application.ini
+@RESPATH@/license.txt
 #ifdef MOZ_UPDATER
 @RESPATH@/update-settings.ini
 #endif
