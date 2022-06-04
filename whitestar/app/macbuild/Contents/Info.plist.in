@@ -223,6 +223,8 @@
 	</dict>
 	<key>NSSupportsAutomaticGraphicsSwitching</key>
 	<true/>
+	<key>NSRequiresAquaSystemAppearance</key>
+	<true/>
 	<key>NSPrincipalClass</key>
 	<string>GoannaNSApplication</string>
 </dict>
