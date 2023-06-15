@@ -1,0 +1,10 @@
+# THIS FILE WAS AUTOMATICALLY GENERATED. DO NOT EDIT.
+
+DEFINES += -DNDEBUG=1 -DTRIMMED=1
+LOCAL_INCLUDES += -I$(topsrcdir)/embedding/browser
+CPPSRCS += nsWebBrowserModule.cpp
+RTL_FLAGS += -MD
+LIBRARY_NAME := embedding_browser_build
+FORCE_STATIC_LIB := 1
+REAL_LIBRARY := embedding_browser_build.lib
+DEFINES += -DMOZ_HAS_MOZGLUE -DMOZILLA_INTERNAL_API -DIMPL_LIBXUL

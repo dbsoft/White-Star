@@ -1,0 +1,7 @@
+# THIS FILE WAS AUTOMATICALLY GENERATED. DO NOT EDIT.
+
+DEFINES += -DNDEBUG=1 -DTRIMMED=1 -DMOZ_APP_VERSION=32.2.1 -DAPP_LICENSE_BLOCK=c:/Work/PaleMoon/White-Star/whitestar/base/content/overrides/app-license.html -DHAVE_SHELL_SERVICE=1 -DCONTEXT_COPY_IMAGE_CONTENTS=1 -DMENUBAR_CAN_AUTOHIDE=1
+DIST_SUBDIR = browser
+FINAL_TARGET = $(if $(XPI_NAME),$(DIST)/xpi-stage/$(XPI_NAME),$(DIST)/bin)$(DIST_SUBDIR:%=/%)
+JAR_MANIFEST := c:/Work/PaleMoon/White-Star/whitestar/base/jar.mn
+RTL_FLAGS += -MD

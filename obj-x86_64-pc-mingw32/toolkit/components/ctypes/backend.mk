@@ -1,0 +1,10 @@
+# THIS FILE WAS AUTOMATICALLY GENERATED. DO NOT EDIT.
+
+DEFINES += -DNDEBUG=1 -DTRIMMED=1
+LOCAL_INCLUDES += -I$(topsrcdir)/js/xpconnect/loader
+CPPSRCS += ctypes.cpp
+RTL_FLAGS += -MD
+LIBRARY_NAME := toolkit_components_ctypes
+FORCE_STATIC_LIB := 1
+REAL_LIBRARY := toolkit_components_ctypes.lib
+DEFINES += -DMOZ_HAS_MOZGLUE -DMOZILLA_INTERNAL_API -DIMPL_LIBXUL

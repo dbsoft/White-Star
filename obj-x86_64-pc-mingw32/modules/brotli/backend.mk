@@ -1,0 +1,53 @@
+# THIS FILE WAS AUTOMATICALLY GENERATED. DO NOT EDIT.
+
+DEFINES += -DNDEBUG=1 -DTRIMMED=1
+LOCAL_INCLUDES += -I$(srcdir)/include
+CSRCS += common/constants.c
+CSRCS += common/context.c
+CSRCS += common/dictionary.c
+CSRCS += common/platform.c
+CSRCS += common/transform.c
+CSRCS += dec/bit_reader.c
+CSRCS += dec/decode.c
+CSRCS += dec/huffman.c
+CSRCS += dec/state.c
+HOST_DEFINES += -DNDEBUG=1 -DTRIMMED=1
+HOST_CSRCS += common/constants.c
+HOST_CSRCS += common/context.c
+HOST_CSRCS += common/dictionary.c
+HOST_CSRCS += common/platform.c
+HOST_CSRCS += common/transform.c
+HOST_CSRCS += dec/bit_reader.c
+HOST_CSRCS += dec/decode.c
+HOST_CSRCS += dec/huffman.c
+HOST_CSRCS += dec/state.c
+HOST_CSRCS += enc/backward_references.c
+HOST_CSRCS += enc/backward_references_hq.c
+HOST_CSRCS += enc/bit_cost.c
+HOST_CSRCS += enc/block_splitter.c
+HOST_CSRCS += enc/brotli_bit_stream.c
+HOST_CSRCS += enc/cluster.c
+HOST_CSRCS += enc/command.c
+HOST_CSRCS += enc/compress_fragment.c
+HOST_CSRCS += enc/compress_fragment_two_pass.c
+HOST_CSRCS += enc/dictionary_hash.c
+HOST_CSRCS += enc/encode.c
+HOST_CSRCS += enc/encoder_dict.c
+HOST_CSRCS += enc/entropy_encode.c
+HOST_CSRCS += enc/fast_log.c
+HOST_CSRCS += enc/histogram.c
+HOST_CSRCS += enc/literal_cost.c
+HOST_CSRCS += enc/memory.c
+HOST_CSRCS += enc/metablock.c
+HOST_CSRCS += enc/static_dict.c
+HOST_CSRCS += enc/utf8_util.c
+HOST_CSRCS += tools/brotli.c
+ALLOW_COMPILER_WARNINGS := 1
+MOZBUILD_CFLAGS += -DBROTLI_BUILD_PORTABLE
+RTL_FLAGS += -MD
+VISIBILITY_FLAGS := 
+LIBRARY_NAME := brotli
+FORCE_STATIC_LIB := 1
+REAL_LIBRARY := brotli.lib
+DEFINES += -DMOZ_HAS_MOZGLUE
+HOST_PROGRAM = brotli.exe

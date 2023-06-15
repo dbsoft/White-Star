@@ -1,0 +1,10 @@
+# THIS FILE WAS AUTOMATICALLY GENERATED. DO NOT EDIT.
+
+DEFINES += -DNDEBUG=1 -DTRIMMED=1
+DIRS := internal
+CPPSRCS += nsRDFResource.cpp
+DIST_INSTALL := 1
+RTL_FLAGS += -MD
+LIBRARY_NAME := rdfutil_external_s
+FORCE_STATIC_LIB := 1
+REAL_LIBRARY := rdfutil_external_s.lib

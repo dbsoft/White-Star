@@ -1,0 +1,18 @@
+# THIS FILE WAS AUTOMATICALLY GENERATED. DO NOT EDIT.
+
+DEFINES += -DNDEBUG=1 -DTRIMMED=1
+DIRS := modules
+CPPSRCS += NativeOSFileInternals.cpp
+DIST_FILES_0 += $(srcdir)/osfile.jsm
+DIST_FILES_0_PATH := $(DEPTH)/dist/bin/modules
+DIST_FILES_0_TARGET := misc
+PP_TARGETS += DIST_FILES_0
+RTL_FLAGS += -MD
+LIBRARY_NAME := toolkit_components_osfile
+FORCE_STATIC_LIB := 1
+REAL_LIBRARY := toolkit_components_osfile.lib
+DEFINES += -DMOZ_HAS_MOZGLUE -DMOZILLA_INTERNAL_API -DIMPL_LIBXUL
+NONRECURSIVE_TARGETS += export
+NONRECURSIVE_TARGETS_export += xpidl
+NONRECURSIVE_TARGETS_export_xpidl_DIRECTORY = $(DEPTH)/xpcom/xpidl
+NONRECURSIVE_TARGETS_export_xpidl_TARGETS += export

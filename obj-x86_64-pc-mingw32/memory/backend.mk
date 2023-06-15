@@ -1,0 +1,5 @@
+# THIS FILE WAS AUTOMATICALLY GENERATED. DO NOT EDIT.
+
+DEFINES += -DNDEBUG=1 -DTRIMMED=1
+DIRS := mozalloc fallible volatile build mozjemalloc
+RTL_FLAGS += -MD

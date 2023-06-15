@@ -1,0 +1,10 @@
+# THIS FILE WAS AUTOMATICALLY GENERATED. DO NOT EDIT.
+
+DEFINES += -DNDEBUG=1 -DTRIMMED=1
+LOCAL_INCLUDES += -I$(topsrcdir)/xpfe/components/directory
+CPPSRCS += nsModule.cpp
+RTL_FLAGS += -MD
+LIBRARY_NAME := xpfe_components_build
+FORCE_STATIC_LIB := 1
+REAL_LIBRARY := xpfe_components_build.lib
+DEFINES += -DMOZ_HAS_MOZGLUE -DMOZILLA_INTERNAL_API -DIMPL_LIBXUL

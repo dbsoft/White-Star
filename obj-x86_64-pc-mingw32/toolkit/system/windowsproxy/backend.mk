@@ -1,0 +1,10 @@
+# THIS FILE WAS AUTOMATICALLY GENERATED. DO NOT EDIT.
+
+DEFINES += -DNDEBUG=1 -DTRIMMED=1
+CPPSRCS += ProxyUtils.cpp
+CPPSRCS += nsWindowsSystemProxySettings.cpp
+RTL_FLAGS += -MD
+LIBRARY_NAME := toolkit_system_windowsproxy
+FORCE_STATIC_LIB := 1
+REAL_LIBRARY := toolkit_system_windowsproxy.lib
+DEFINES += -DMOZ_HAS_MOZGLUE -DMOZILLA_INTERNAL_API -DIMPL_LIBXUL

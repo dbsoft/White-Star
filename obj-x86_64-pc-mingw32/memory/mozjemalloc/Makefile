@@ -1,0 +1,21 @@
+# THIS FILE WAS AUTOMATICALLY GENERATED. DO NOT MODIFY BY HAND.
+DEPTH := ../..
+topobjdir := c:/Work/PaleMoon/White-Star/obj-x86_64-pc-mingw32
+topsrcdir := c:/Work/PaleMoon/White-Star/platform
+srcdir := c:/Work/PaleMoon/White-Star/platform/memory/mozjemalloc
+VPATH := c:/Work/PaleMoon/White-Star/platform/memory/mozjemalloc
+relativesrcdir := memory/mozjemalloc
+include $(DEPTH)/config/autoconf.mk
+#
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+# Force optimize mozjemalloc on --disable-optimize builds.
+# This works around the issue that the Android NDK's definition of ffs is
+# broken when compiling without optimization, while avoiding to add yet another
+# configure test.
+MOZ_OPTIMIZE = 1
+
+
+include $(topsrcdir)/config/recurse.mk

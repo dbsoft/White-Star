@@ -1,0 +1,11 @@
+# THIS FILE WAS AUTOMATICALLY GENERATED. DO NOT EDIT.
+
+DEFINES += -DNDEBUG=1 -DTRIMMED=1
+DIRS := md
+LOCAL_INCLUDES += -I$(topsrcdir)/xpcom/reflect/xptinfo
+CPPSRCS += xptcall.cpp
+RTL_FLAGS += -MD
+LIBRARY_NAME := xpcom_reflect_xptcall
+FORCE_STATIC_LIB := 1
+REAL_LIBRARY := xpcom_reflect_xptcall.lib
+DEFINES += -DMOZ_HAS_MOZGLUE -DMOZILLA_INTERNAL_API -DIMPL_LIBXUL

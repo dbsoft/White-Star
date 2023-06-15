@@ -1,0 +1,44 @@
+# THIS FILE WAS AUTOMATICALLY GENERATED. DO NOT EDIT.
+
+DEFINES += -DNDEBUG=1 -DTRIMMED=1 -D_USE_ANSI_CPP -DXPCOM_GLUE
+DIRS := staticruntime
+LOCAL_INCLUDES += -I$(topsrcdir)/xpcom/build
+LOCAL_INCLUDES += -I$(topsrcdir)/xpcom/threads
+CPPSRCS += ../AppData.cpp
+CPPSRCS += ../FileUtils.cpp
+CPPSRCS += ../PLDHashTable.cpp
+CPPSRCS += ../nsArrayEnumerator.cpp
+CPPSRCS += ../nsArrayUtils.cpp
+CPPSRCS += ../nsCOMArray.cpp
+CPPSRCS += ../nsCOMPtr.cpp
+CPPSRCS += ../nsCRTGlue.cpp
+CPPSRCS += ../nsCategoryCache.cpp
+CPPSRCS += ../nsClassInfoImpl.cpp
+CPPSRCS += ../nsComponentManagerUtils.cpp
+CPPSRCS += ../nsCycleCollectionParticipant.cpp
+CPPSRCS += ../nsDeque.cpp
+CPPSRCS += ../nsEnumeratorUtils.cpp
+CPPSRCS += ../nsID.cpp
+CPPSRCS += ../nsIInterfaceRequestorUtils.cpp
+CPPSRCS += ../nsINIParser.cpp
+CPPSRCS += ../nsISupportsImpl.cpp
+CPPSRCS += ../nsMemory.cpp
+CPPSRCS += ../nsQuickSort.cpp
+CPPSRCS += ../nsStringAPI.cpp
+CPPSRCS += ../nsTArray.cpp
+CPPSRCS += ../nsTObserverArray.cpp
+CPPSRCS += ../nsThreadUtils.cpp
+CPPSRCS += ../nsVersionComparator.cpp
+CPPSRCS += ../nsWeakReference.cpp
+CPPSRCS += nsXPCOMGlue.cpp
+DISABLE_STL_WRAPPING := 1
+DIST_INSTALL := 1
+MOZBUILD_CFLAGS += -Zl
+MOZBUILD_CXXFLAGS += -Zl
+RTL_FLAGS += -MD
+LIBRARY_NAME := xpcomglue
+FORCE_STATIC_LIB := 1
+REAL_LIBRARY := xpcomglue.lib
+SDK_LIBRARY := xpcomglue.lib
+NO_EXPAND_LIBS := 1
+STATIC_LIBS += $(DEPTH)/memory/fallible/fallible.lib

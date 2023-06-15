@@ -1,0 +1,5 @@
+# THIS FILE WAS AUTOMATICALLY GENERATED. DO NOT EDIT.
+
+DEFINES += -DNDEBUG=1 -DTRIMMED=1 -Dtarget=x86_64-pc-mingw32 '-DMOZ_CONFIGURE_OPTIONS='\''MOZILLABUILD=C:\mozilla-build\'\'' --host=x86_64-pc-mingw32 --target=x86_64-pc-mingw32 --enable-application=whitestar --with-external-source-dir=c:/Work/PaleMoon/White-Star --enable-update-channel=release --enable-jemalloc MAKE=c:/mozilla-build/bin/mozmake.EXE --disable-accessibility --enable-av1 --enable-jxl --disable-eme --disable-gamepad '\''--enable-optimize=-Od -GTs -GS-'\'' --disable-parental-controls --disable-precompiled-startupcache --enable-strip --disable-updater --disable-webrtc --with-branding=whitestar/branding/whitestar' -DCC=cl.EXE -DCC_VERSION=19.29.30148 -DCXX=cl.EXE '-DCFLAGS=-TC -nologo -wd4752 -wd4091 -D_HAS_EXCEPTIONS=0 -W3 -Gy -Zc:inline -utf-8 -FS -Gw -wd4244 -wd4267 -we4553' -DTOPOBJDIR=c:/Work/PaleMoon/White-Star/obj-x86_64-pc-mingw32
+JAR_MANIFEST := c:/Work/PaleMoon/White-Star/platform/toolkit/content/jar.mn
+RTL_FLAGS += -MD

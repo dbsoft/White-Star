@@ -1,0 +1,11 @@
+prefix=c:/Work/PaleMoon/White-Star/obj-x86_64-pc-mingw32/dist
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: SpiderMonkey 6.2.0
+Description: The Mozilla library for JavaScript
+Version: 6.2.0
+
+Libs: -L${libdir} -lmozjs
+Cflags: -include ${includedir}/mozjs/js/RequiredDefines.h -I${includedir}/mozjs

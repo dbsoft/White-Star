@@ -1,0 +1,47 @@
+# THIS FILE WAS AUTOMATICALLY GENERATED. DO NOT EDIT.
+
+DEFINES += -DNDEBUG=1 -DTRIMMED=1
+CPPSRCS += e_acos.cpp
+CPPSRCS += e_acosh.cpp
+CPPSRCS += e_asin.cpp
+CPPSRCS += e_atan2.cpp
+CPPSRCS += e_atanh.cpp
+CPPSRCS += e_cosh.cpp
+CPPSRCS += e_exp.cpp
+CPPSRCS += e_hypot.cpp
+CPPSRCS += e_log.cpp
+CPPSRCS += e_log10.cpp
+CPPSRCS += e_log2.cpp
+CPPSRCS += e_pow.cpp
+CPPSRCS += e_sinh.cpp
+CPPSRCS += k_exp.cpp
+CPPSRCS += s_asinh.cpp
+CPPSRCS += s_atan.cpp
+CPPSRCS += s_cbrt.cpp
+CPPSRCS += s_ceil.cpp
+CPPSRCS += s_ceilf.cpp
+CPPSRCS += s_copysign.cpp
+CPPSRCS += s_expm1.cpp
+CPPSRCS += s_fabs.cpp
+CPPSRCS += s_floor.cpp
+CPPSRCS += s_floorf.cpp
+CPPSRCS += s_log1p.cpp
+CPPSRCS += s_nearbyint.cpp
+CPPSRCS += s_rint.cpp
+CPPSRCS += s_rintf.cpp
+CPPSRCS += s_scalbn.cpp
+CPPSRCS += s_tanh.cpp
+CPPSRCS += s_trunc.cpp
+CPPSRCS += s_truncf.cpp
+MOZBUILD_CFLAGS += -GL
+MOZBUILD_CXXFLAGS += -wd4146
+MOZBUILD_CXXFLAGS += -wd4305
+MOZBUILD_CXXFLAGS += -wd4723
+MOZBUILD_CXXFLAGS += -wd4756
+MOZBUILD_CXXFLAGS += -wd4018
+MOZBUILD_CXXFLAGS += -GL
+RTL_FLAGS += -MD
+LIBRARY_NAME := modules_fdlibm_src
+FORCE_STATIC_LIB := 1
+REAL_LIBRARY := modules_fdlibm_src.lib
+DEFINES += -DMOZ_HAS_MOZGLUE
