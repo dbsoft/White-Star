@@ -1,3 +1,0 @@
-#define MOZ_MOZILLA_API_KEY no-mozilla-api-key
-#define MOZ_BING_API_KEY no-bing-api-key
-#define MOZ_BING_API_CLIENTID no-bing-api-clientid

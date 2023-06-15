@@ -1,9 +1,0 @@
-# THIS FILE WAS AUTOMATICALLY GENERATED. DO NOT EDIT.
-
-DEFINES += -DNDEBUG=1 -DTRIMMED=1
-XPI_NAME = quitter
-FINAL_TARGET = $(if $(XPI_NAME),$(DIST)/xpi-stage/$(XPI_NAME),$(DIST)/bin)$(DIST_SUBDIR:%=/%)
-JAR_MANIFEST := c:/Work/PaleMoon/White-Star/platform/tools/quitter/jar.mn
-NO_JS_MANIFEST := 1
-RTL_FLAGS += -MD
-USE_EXTENSION_MANIFEST := 1
