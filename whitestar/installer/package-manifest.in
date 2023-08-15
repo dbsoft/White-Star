@@ -340,8 +340,10 @@
 
 ; Shutdown Terminator
 
+#ifndef XP_MACOSX
 #if defined(MOZ_ASAN) || defined(MOZ_TSAN) || defined(MOZ_LSAN) || defined(MOZ_UBSAN)
 @BINPATH@/llvm-symbolizer@BIN_SUFFIX@
+#endif
 #endif
 
 #if defined(MOZ_ASAN) && defined(XP_WIN)
