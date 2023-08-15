@@ -340,12 +340,10 @@
 
 ; Shutdown Terminator
 
-#if defined(CLANG_CXX)
 #if defined(MOZ_ASAN) || defined(MOZ_TSAN)
-@BINPATH@/llvm-symbolizer
-#endif
+@BINPATH@/llvm-symbolizer@BIN_SUFFIX@
 #endif
 
-#if defined(MOZ_ASAN) && defined(CLANG_CL)
+#if defined(MOZ_ASAN) && defined(XP_WIN)
 @BINPATH@/clang_rt.asan_dynamic-*.dll
 #endif
