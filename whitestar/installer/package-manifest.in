@@ -114,6 +114,7 @@
 #else
 @RESPATH@/@ICU_DATA_FILE@
 #endif
+#endif
 #ifdef MOZ_SHARED_ICU
 @BINPATH@/@DLL_PREFIX@icu@MOZ_ICU_VERSION@@DLL_SUFFIX@
 #endif
