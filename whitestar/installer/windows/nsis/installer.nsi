@@ -778,9 +778,7 @@ Function CheckExistingInstall
 FunctionEnd
 
 Function LaunchApp
-!ifndef DEV_EDITION
   ${ManualCloseAppPrompt} "${WindowClass}" "$(WARN_MANUALLY_CLOSE_APP_LAUNCH)"
-!endif
 
   ClearErrors
   ${GetParameters} $0
