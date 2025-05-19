@@ -1,3 +1,6 @@
 [submodule "platform"]
 	path = platform
 	url = https://repo.palemoon.org/dbsoft/UXP.git
+[submodule "whitestar/branding/whitestar"]
+	path = whitestar/branding/whitestar
+	url = https://github.com/dbsoft/White-Star-Branding.git
