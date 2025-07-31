@@ -724,8 +724,8 @@ pref("plugins.always_show_indicator", false);
 pref("plugins.click_to_play", true);
 
 // Platform pref is to enable all plugins by default.
-// Uncomment this pref to default to click-to-play
-// pref("plugin.default.state", 1);
+// This pref defaults them to click-to-play
+pref("plugin.default.state", 1);
 
 // Don't load plugin instances with no src declared.
 // These prefs are documented in detail in all.js.

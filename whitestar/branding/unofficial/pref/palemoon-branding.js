@@ -11,7 +11,6 @@ pref("extensions.getAddons.maxResults", 10);
 pref("extensions.getAddons.cache.enabled", false);
 pref("dom.max_chrome_script_run_time", 90);
 pref("dom.max_script_run_time", 20);
-pref("plugin.default.state", 2);
 pref("plugin.expose_full_path", true);
 pref("dom.ipc.plugins.timeoutSecs", 20);
 pref("nglayout.initialpaint.delay", 300);
