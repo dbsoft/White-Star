@@ -4,7 +4,7 @@
 
 /* Sidebars */
 .sidebar-placesTree {
-  -moz-appearance: none;
+  appearance: none;
   border: 0;
   margin: 0;
   border-top: 1px solid ThreeDShadow;
@@ -34,8 +34,7 @@
     text-decoration: none;
   }
 
-  @media (-moz-os-version: windows-vista),
-         (-moz-os-version: windows-win7) {
+  @media (-moz-os-version: windows-win7) {
     #bookmarksPanel,
     #history-panel {
       background-color: #EEF3FA;

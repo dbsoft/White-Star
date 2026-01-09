@@ -5,7 +5,7 @@
 #tabs-display,
 #tabsList {
   background-color: transparent;
-  -moz-appearance: none;
+  appearance: none;
   margin: 0;
 }
 
