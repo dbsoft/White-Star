@@ -156,6 +156,8 @@
 	<string>%MAC_APP_NAME%</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
+	<key>ATSApplicationFontsPath</key>
+	<string>fonts</string>
 	<key>CFBundleShortVersionString</key>
 	<string>%APP_VERSION%</string>
 	<key>CFBundleSignature</key>
