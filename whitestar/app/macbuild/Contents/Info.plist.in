@@ -219,11 +219,13 @@
 	<key>LSMinimumSystemVersionByArchitecture</key>
 	<dict>
 		<key>i386</key>
-		<string>10.7.0</string>
+		<string>10.5.0</string>
 		<key>x86_64</key>
 		<string>10.7.0</string>
 		<key>ppc</key>
 		<string>10.5.0</string>
+		<key>arm64</key>
+		<string>11.0.0</string>
 	</dict>
 	<key>NSSupportsAutomaticGraphicsSwitching</key>
 	<true/>
