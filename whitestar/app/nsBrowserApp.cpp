@@ -282,7 +282,7 @@ InitXPCOMGlue(const char *argv0, nsIFile **xreDirectory)
       (size_t(lastSlash - exePath) > MAXPATHLEN - sizeof(XPCOM_DLL) - 1))
     return NS_ERROR_FAILURE;
 
-  strcpy(lastSlash + 1, XPCOM_DLL);
+  snprintf(lastSlash + 1, MAXPATHLEN - (lastSlash - exePath) - 1, "%s", XPCOM_DLL);
 
   if (!FileExists(exePath)) {
     Output("Could not find the Mozilla runtime.\n");
@@ -312,7 +312,10 @@ InitXPCOMGlue(const char *argv0, nsIFile **xreDirectory)
     *lastSlash = '\0';
 #ifdef XP_MACOSX
     lastSlash = strrchr(exePath, XPCOM_FILE_PATH_SEPARATOR[0]);
-    strcpy(lastSlash + 1, kOSXResourcesFolder);
+    if (!lastSlash ||
+        (size_t(lastSlash - exePath) > MAXPATHLEN - sizeof(kOSXResourcesFolder) - 1))
+      return NS_ERROR_FAILURE;
+    snprintf(lastSlash + 1, MAXPATHLEN - (lastSlash - exePath) - 1, "%s", kOSXResourcesFolder);
 #endif
 #ifdef XP_WIN
     rv = NS_NewLocalFile(NS_ConvertUTF8toUTF16(exePath), false,
